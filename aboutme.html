@@ -1,0 +1,155 @@
+<html>
+	<head>
+	<title>About Me</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+	<link href="stylesheet.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<style>
+
+					#body {
+						font-size:15pt;
+						float:left;
+						font-family: montserrat;
+						color:black;
+						margin-left:25%;
+						margin-top:-17%;
+						padding-right:25%;
+					}
+
+					#pfp {
+						width:20%;
+						height:auto;
+						float:left;
+						margin-right:3%;
+						/* margin-top: 23%;
+						margin-left:-15%; */
+					}
+
+					#name {
+						font-family:montserrat;
+						float:left;
+						font-size:20pt;
+						font-weight:bold;
+						/* margin-left:40%;
+						margin-top:-25%; */
+					}
+
+					#location {
+						font-family:montserrat;
+						float:left;
+						font-size:17pt;
+						color:#B5EB95;
+						font-weight:bold;
+					}
+
+					#resumebutton {
+						font-family:montserrat;
+						float:left;
+						font-size:12pt;
+						border-width:1px;
+						border-radius:12px;
+						background-color:white;
+						padding:3px;
+						padding-left:5px;
+						padding-right:5px;
+						/* margin-left:40%;
+						margin-top:-25%; */
+					}
+
+					#resumebutton:hover{
+						background-color:#B5EB95;
+						/* box-shadow: 4px 4px #dddfd2; */
+					}
+
+					#content {
+						float:left;
+						margin-left:10%;
+						margin-top:-4%;
+					}
+
+					@media (max-width:500px) {
+						#name {
+							color:black;
+						}
+
+						#pfp {
+							width:50%;
+							margin-left:5%;
+							margin-top:-10%;
+							margin-bottom:5%;
+						}
+
+						#body {
+							margin-top:5%;
+							margin-left:7%;
+							margin-bottom:5%;
+							font-size:16px;
+							margin-right:0%;
+						}
+
+						#location {
+							margin-bottom:10%;
+							margin-top:2%;
+							font-size:20px;
+						}
+
+						#content {
+							margin-top:-40%;
+						}
+					}
+		</style>
+
+		<script>
+			$(document).ready(function(){
+				$("#pfp").hide().fadeIn(1000);
+				$("#content").hide().fadeIn(1000);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html"><img src="name.png" id="logoname"></a>
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html">HOME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+			</div>
+
+			<div id="content">
+				<div id="title">
+					ABOUT ME
+				</div>
+				<br><br><br><br><br><br>
+				<img id="pfp" src="profile.jpg">
+				<div id="body">
+					<div id="name">Faith Wang</div>
+					<br><br>
+					<div id="location">Chicago - Los Angeles</div>
+					<br><br>
+					Hi! I'm Faith, a maker of things hoping to bring people together through design. Currently exploring the world of UI/UX and Product Design one step at a time as a part of Cohort 8 at the USC Iovine & Young Academy.
+					<br><br>
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/faith%20wang%20resume%20copy.pdf" target="_new">
+						<button type="button" id="resumebutton">MY RESUME</button>
+					</a>
+				</div>
+			</div>
+	</body>
+</html>

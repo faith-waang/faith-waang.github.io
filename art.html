@@ -1,0 +1,285 @@
+<html>
+	<head>
+		<title>Art</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <meta charset="utf-8"/>
+
+		<style>
+
+
+            #subtitle {
+                font-size:20pt;
+                float:left;
+                font-family: montserrat;
+                font-weight:bold;
+                color:#B5EB95;
+                width:80%;
+            }
+
+            .body {
+                font-size:15pt;
+                float:left;
+                text-align:left;;
+                /* margin-left:13%;
+                margin-top: 5%; */
+                font-family: montserrat;
+                color:black;
+                /* width:auto; */
+            }
+
+            #image{
+                float:left;
+                width:450px;
+                height:auto;
+                padding:2%;
+                /* left:10%;
+                margin-left:13%; */
+                margin-top:10%;
+            }
+
+            #image1{
+                float:left;
+                width:450px;
+                height:auto;
+                padding:2%;
+            }
+
+            #image2{
+                float:left;
+                width:auto;
+                height:700px;
+                padding:2%;
+            }
+
+            #painting1{
+                float:left;
+                /* margin:auto; */
+                width:20%;
+                height:5%;
+                padding:2%;
+                /* left:10%; */
+                /* margin-left:0%;
+                margin-top:5%; */
+            }
+
+            #painting2{
+                float:left;
+                /* margin:auto; */
+                width:400px;
+                height:auto;
+                padding:2%;
+                /* left:10%; */
+                /* margin-left:70%;
+                margin-top:-40%; */
+            }
+
+            #painting3{
+                float:left;
+                /* margin:auto; */
+                width:600px;
+                height:600px;
+                padding:2%;
+                /* left:10%; */
+                /* margin-left:0%;
+                margin-top:-15%; */
+            }
+
+            #acrylic1{
+                float:left;
+                /* margin:auto; */
+                width:550px;
+                height:auto;
+                padding:2%;
+                /* left:10%; */
+                /* margin-left:0%;
+                margin-top:10%; */
+            }
+
+            #acrylic2{
+                float:left;
+                /* margin:auto; */
+                width:550px;
+                height:auto;
+                padding:2%;
+                /* left:10%; */
+                /* margin-left:105%;
+                margin-top:-73%; */
+            }
+
+
+            #screenshots{
+                float:left;
+                margin-left:5%;
+                display:flex;
+                flex:2;
+            }
+
+            #content {
+                float:left;
+				margin-left:10%;
+                margin-top:-5%;
+            }
+
+            #acrylic {
+                float:left;
+                margin-top:2%;
+            }
+
+            #guohua {
+                float:left;
+                margin-top:2%;
+            }
+
+            @media (max-width:500px) {
+                #content {
+                    margin-top: -30%;
+                }
+
+                #subtitle {
+                    font-size:20px;
+                    width:200px;
+                }
+
+                #screenshots {
+                    display:block;
+                }
+
+            #image{
+                float:left;
+                width:200px;
+                height:auto;
+                margin-top:30%;
+                margin-left: -50%;
+                /* height:auto; */
+                padding:2%;
+            }
+
+            #image2{
+                float:left;
+                width:200px;
+                height:auto;
+                margin-left:-95px;
+                margin-top:50px;
+                padding:2%;
+                margin-bottom:20%;
+            }
+
+            #painting2{
+                float:left;
+                width:200px;
+                height:400px;
+                margin-left:-7%;
+                padding:2%;
+            }
+
+            #painting3{
+                float:left;
+                width:230px;
+                height:auto;
+                margin-left:-7%;
+                padding:2%;
+                margin-bottom: 20%;
+            }
+
+            #acrylic1{
+                float:left;
+                width:200px;
+                height:auto;
+                margin-top: 5%;
+                padding:2%;
+            }
+
+            #acrylic2{
+                float:left;
+                width:200px;
+                height:auto;
+                padding:2%;
+            }
+            }
+		</style>
+
+        <script>
+            $(document).ready(function(){
+                $("#content").hide().fadeIn(1000);
+            });
+        </script>
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<img src="name.png" id="logoname">
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">HOME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar"><a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a></div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+            </div>
+
+            <div id="content">
+                <div id="title">
+                    ART
+                </div>
+                <br><br><br><br>
+                <div id="subtitle">
+                    Painting, Drawing, Collaging, Editing, Brain dumping
+                </div>
+                <br><br><br><br><br>
+
+                <!--digital-->
+                <div id="digital">
+                    <div class="body">
+                        <strong>DIGITAL</strong>
+                    </div>
+                    <div id="screenshots">
+                        <img id="image" src="digital1.jpeg">
+                        <br><br>
+                        <img id="image2" src="digital2.jpeg">
+                    </div>
+                </div>
+
+                <br><br><br><br>
+
+                <!--chinese painting-->
+                <div id="guohua">
+                    <div class="body">
+                        <strong>CHINESE TRADITIONAL PAINTING</strong>
+                    </div>
+
+                    <div id="screenshots">
+                        <!-- <img id="painting1" src="painting1.jpeg">
+                        <br><br> -->
+                        <img id="painting2" src="painting2.jpeg">
+                        <img id="painting3" src="painting3.jpeg">
+                    </div>
+                </div>
+                        
+                <div id="acrylic">
+                    <div class="body">
+                        <strong>ACRYLIC</strong>
+                    </div>
+
+                    <div id="screenshots">
+                        <img id="acrylic1" src="acrylic1.jpeg">
+                        <br><br>
+                        <img id="acrylic2" src="acrylic2.jpeg">
+                    </div>
+                </div>
+            </div>
+
+		</div>
+	</body>
+</html>

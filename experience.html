@@ -1,0 +1,304 @@
+<html>
+	<head>
+		<title>Projects</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+		<link href="stylesheet.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<style>
+
+			.previewimg {
+				width:600px;
+				height:auto;
+				float:left;
+			}
+
+			#branche{
+				margin-top:5%;
+				margin-bottom:5%;
+			}
+
+			#nooz {
+				float:right;
+				/* margin-top:-11%;
+				margin-left:90%; */
+				position:relative;
+			}
+
+			#right {
+				float:right;
+			}
+
+			#coz {
+				float:left;
+			}
+
+			#froot {
+				float:right;
+				margin-left:50%;
+			}
+
+			#art {
+				float:left;
+			}
+
+			.projectname {
+                font-family:montserrat;
+                float:left;
+                font-size:25pt;
+				font-weight:bold;
+				/* position:absolute; */
+            }
+
+			#projects {
+				position:relative;
+				
+			}
+
+			.intro {
+				float:left;
+			}
+
+			.description {
+				font-family:montserrat;
+                float:left;
+                font-size:15pt;
+				font-weight:bold;
+				color:#B5EB95;
+				/* position:absolute; */
+			}
+
+			.previewimg:hover{
+				box-shadow: 5px 5px #dddfd2;
+				zoom:101%;
+				transition:2s;
+			}
+
+			#content {
+				float:left;
+				width:80%;
+				margin-left:10%;
+			}
+
+
+			@media (max-width:600px) {
+                .previewimg {
+					width:80%;
+					margin-left:10%;
+				}
+
+				#title {
+					font-size:24pt;
+					margin-bottom:10%;
+				}
+
+				#content {
+					margin-top: -25%;
+				}
+
+				#email {
+					font-size:16px;
+					margin-top:-3%;
+				}
+
+				.intro {
+					margin-top:-70%;
+					margin-left:10%;
+				}
+
+				.projectname {
+					margin-top:-10%;
+				}
+
+				#nooz {
+					margin-top:-20%;
+				}
+
+				#description {
+					margin-top:-40%;
+				}
+
+				#froot {
+					width:250px;
+					margin-right:5%;
+				}
+
+				#cozname {
+					margin-top:-30%;
+				}
+
+				#cozdescription {
+					margin-top:-25%;
+				}
+
+				#frootname {
+					margin-top: -55%;
+					margin-left:-25%;
+				}
+
+				#frootdescription {
+					margin-top: -55%;
+					margin-left:-25%;
+				}
+
+				#artname {
+					margin-top: -30%;
+				}
+
+				#artdescription {
+					margin-top:-30%;
+				}
+
+				#branchedescription {
+					margin-top:-10%;
+				}
+
+				#noozdescription {
+					margin-top: -10%;
+				}
+            }
+		</style>
+
+		<script>
+			$(document).ready(function(){
+				$("#branche").hide().fadeIn(1000);
+				$("#nooz").hide().fadeIn(1000);
+				$("#coz").hide().fadeIn(1000);
+				$("#froot").hide().fadeIn(1000);
+				$("#art").hide().fadeIn(1000);
+				$("#title").hide().fadeIn(1000);
+			});
+		</script>
+
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<img src="name.png" id="logoname">
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html">HOME</a>
+				</div>
+
+				<br><br><br><br>
+
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+
+				<br><br><br><br>
+
+				<div class="menubar"><a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a></div>
+
+				<br><br><br><br>
+
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+			</div>
+
+			<div id="content">
+				<div id="title">
+					RECENT PROJECTS
+				</div>
+
+				<br><br><br>
+
+				<!-- <div class="projects"> -->
+
+					<!--branche-->
+					<div id="branche">
+						<a href="http://webdev.iyaclasses.com/~faithw/acad275/branche.html">
+							<img src="branche.jpeg" class="previewimg">
+						</a>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="intro">
+							<div class="projectname" id="branchename">
+								Branche
+							</div>
+								<br><br><br>
+							<div class="description" id="branchedescription">
+								Interface Design
+							</div>
+						</div>
+					</div>
+
+					<!--nooz-->
+					<div id="nooz">
+						<a href="http://webdev.iyaclasses.com/~faithw/acad275/nooz.html">
+						<img src="nooz.png" class="previewimg">
+						</a>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="intro">
+							<div class="projectname">
+								Nooz
+							</div>
+							<br><br><br>
+							<div class="description" id="noozdescription">
+								Interface Design
+							</div>
+						</div>
+					</div>
+
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+					<!--coz-->
+					<div id="coz">
+						<a href="http://webdev.iyaclasses.com/~faithw/acad275/coz.html">
+							<img src="cozcover.jpeg" class="previewimg" id="coz">
+						</a>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="intro">
+							<div class="projectname" id="cozname">
+								Coz Cafe
+							</div>
+								<br><br><br>
+							<div class="description" id="cozdescription">
+								Web Design
+							</div>
+						</div>
+					</div>
+
+					<!--froot-->
+					<div id="froot">
+						<a href="http://webdev.iyaclasses.com/~faithw/acad275/froot.html">
+							<img src="froot.jpeg" class="previewimg" id="froot">
+						</a>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="intro">
+							<div class="projectname" id="frootname">
+								Froot
+							</div>
+								<br>
+								<br>
+								<br>
+							<div class="description" id="frootdescription">
+								Event Design
+							</div>
+						</div>
+					</div>
+
+					<!--art-->
+					<div id="art">
+						<a href="http://webdev.iyaclasses.com/~faithw/acad275/art.html">
+							<img src="art.jpeg" class="previewimg" id="art">
+						</a>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="intro">
+							<div class="projectname" id="artname">
+								Art
+							</div>
+								<br><br><br>
+							<div class="description" id="artdescription">
+								Passion Projects
+							</div>
+						</div>
+					</div>
+				<!-- </div>
+			</div>
+		</div>
+	</body>
+</html>

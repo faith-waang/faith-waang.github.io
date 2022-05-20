@@ -1,0 +1,76 @@
+#outercontainer {
+    background-color:white;
+    /* f8f9f0 */
+    margin:auto;
+    height:auto;
+    padding-bottom: 15%;
+    overflow:auto;
+}
+
+#nav {
+    float:right;
+    margin-right:8%;
+    margin-top:6%;
+    text-align:right;
+    width:500px;
+}
+
+ .menubar {
+    text-align:center;
+    display:block;
+    float:right;
+    margin:auto;
+    font-family:montserrat;
+    height:2%;
+    font-size:10pt;
+    margin-left:8%;
+    margin-right:6%;
+    color:black;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#B5EB95;
+}
+
+#logoname {
+    margin-top:5%;
+    margin-left:4%;
+    width:15%;
+    height:auto;
+    position:absolute;
+    float:left;
+    display:block;
+    display:flex;
+    flex:1;
+}
+
+#title {
+    font-size:35pt;
+    float:left;
+    font-family: montserrat;
+    font-weight:bold;
+    color:black;
+}
+
+@media (max-width:500px) {
+    .menubar {
+        font-size:8pt;
+        margin-bottom:0px;
+        margin-top:0px;
+        height:10px;
+        padding:0px;
+    }
+
+    #logoname {
+        width: 35%;
+    }
+
+    #title {
+        font-size:25pt;
+    }
+}

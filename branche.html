@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>Branche</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.js"></script>
+
+		<style>
+
+            #subtitle {
+                font-size:20pt;
+                float:left;
+                font-family: montserrat;
+                font-weight:bold;
+                color:#B5EB95;
+            }
+
+            #body {
+                font-size:15pt;
+                float:left;
+                font-family: montserrat;
+                color:black;
+                width:80%;
+            }
+
+            .image{
+                float:left;
+                /* margin:auto; */
+                width:40%;
+                height:auto;
+                padding:2%;
+                margin-left:-2%;
+            }
+
+            #screenshots{
+                float:left;
+                display:flex;
+                flex:2;
+                text-align: center;
+                margin-top:2%;
+            }
+
+            #content {
+                float:left;
+				margin-left:10%;
+                margin-top:-5%;
+            }
+
+            @media (max-width:500px) {
+                #content {
+                    margin-top: -30%;
+                }
+
+                #screenshots {
+                    flex:1;
+                    margin-top: 10%;
+                }
+            }
+
+		</style>
+        <script>
+            $(document).ready(function(){
+                $("#content").hide().fadeIn(1000);
+            });
+        </script>
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<img src="name.png" id="logoname">
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html">HOME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar"><a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a></div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+            </div>
+
+            <div id="content">
+                <div id="title">
+                    BRANCHE
+                </div>
+
+                <br><br><br><br>
+                <div id="subtitle">
+                    Webapp Interface Design
+                </div>
+                <br><br><br><br>
+                <div id="body">
+                    I was a part of a pitch team that was given the problem space of antiquated workplace organization technologies.
+                    <br><br>
+                    Our solution was Branche, a web-app that provided a platform for mid-size companies to facilitate interactions between management and employees in a creative and comfortable manner. The key feature of the web-app is the ability for management to find idle employees who are interested in side projects, and for idle employees to find different roles in the company to engage in. 
+                    <br><br>
+                    As the UI designer for this project, I coordinated with our branding and graphic designer across the span of a week to create this mockup in Figma. For our final pitch, the functions of our web-app were animated to simulate real-life interaction with this application.
+                </div>
+
+                <br><br>
+
+                <div id="screenshots">
+                    <img class="image" src="branche1.jpeg">
+                    
+                    <img class="image" src="branche2.jpeg">
+                </div>
+
+                <div id="screenshots">
+                    <img class="image" src="branche3.jpeg">
+                    <br><br>
+                    <img class="image" src="branche4.jpeg">
+                </div>
+            </div>
+				
+		</div>
+	</body>
+</html>

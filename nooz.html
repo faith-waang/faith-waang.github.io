@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<title>Nooz</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.js"></script>
+
+		<style>
+
+            #subtitle {
+                font-size:20pt;
+                float:left;
+                font-family: montserrat;
+                font-weight:bold;
+                color:#B5EB95;
+            }
+
+            #body {
+                font-size:15pt;
+                float:left;
+                font-family: montserrat;
+                color:black;
+                width:80%;
+            }
+
+            .image{
+                float:left;
+                width:18%;
+                height:auto;
+                margin-top:2%;
+                padding:5%;
+                position:relative;
+                /* float:right;
+                width:20%;
+                height:auto;
+                margin-right:25%;
+                margin-top:-7%; */
+            }
+
+            /* #arrow {
+                float:right;
+                width:1%;
+                height:auto;
+                margin-right:-25%;
+                margin-top:12%;
+            }
+
+            #arrowleft {
+                float:left;
+                width:1%;
+                height:auto;
+                margin-right:5%;
+                margin-left:10%;
+                margin-top:12%;
+            } */
+
+            #screenshots{
+                float:left;
+                display:flex;
+                flex:2;
+                margin-left:-5%;
+            }
+
+            #content {
+                float:left;
+                margin-left:10%;
+                margin-top:-5%;
+            }
+
+            @media (max-width:500px) {
+                #content {
+                    margin-top:-30%;
+                }
+
+                #subtitle {
+                    width:200px;
+                }
+
+                #body {
+                    margin-top: 5%;
+                }
+            }
+
+		</style>
+
+        <script>
+            // var images = new Array;
+            //     images[0] = "nooz1.png";
+            //     images[1] = "nooz2.png";
+            //     images[2] = "nooz3.png";
+            //     images[3] = "nooz4.png";
+            //     images[4] = "nooz5.png";
+            //     images[5] = "nooz6.png";
+
+            // document.querySelector("#button").addEventListener("click", function(){
+            //     for (var i=0; i<images.length; i++) {
+            //         document.querySelector("#images").innerHTML = '<img src="' + images[i] + '">';
+            //     }
+            // })
+            
+            $(document).ready(function(){
+                $("#content").hide().fadeIn(1000);
+            });
+
+            $("#arrow").on("click", function(){
+                $("#image").src()
+            })
+        </script>
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<img src="name.png" id="logoname">
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html">HOME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar"><a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a></div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+            </div>
+
+            <div id="content">
+                <div id="title">
+                    NOOZ
+                </div>
+
+                <br><br><br><br>
+                <div id="subtitle">
+                    Interface Design
+                </div>
+                <br><br><br><br>
+                <div id="body">
+                    My team was tasked with reimagining the news to make local news more accessible and received by greater audiences. Our proposal was Nooz.
+                    <br><br>
+                    Nooz is a news platform in which personal daily decks of news articles are curated for each user depending on their preferences. Inspired by interactive apps like Tinder to capture readers' attentions, the Nooz app presents users with daily decks in which they can swipe left (like) or right (to dislike) in order to learn about current events and update their personal preferences. 
+                    <br><br>
+                    This app interface was designed in the span of a week in conjunction with a graphic designer, primarily using Figma.
+                    
+                </div>
+
+                <!-- <img id="arrowleft" src="arrowleft.png"> -->
+                <!-- <div id="image"> -->
+                    <!-- <img id="image" src="nooz1.png"> -->
+                <!-- </div> -->
+                <!-- <img id="arrow" src="arrow.png"> -->
+
+                <div id="screenshots">
+                    <img class="image" src="nooz1.png">
+                    <img class="image" src="nooz2.png">
+                    <img class="image" src="nooz3.png">
+                </div>
+
+                <div id="screenshots">
+                    <img class="image" src="nooz4.png">
+                    <!-- <br><br> -->
+                    <img class="image" src="nooz5.png">
+                    <!-- <br><br> -->
+                    <img class="image" src="nooz6.png">
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

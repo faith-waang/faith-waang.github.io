@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>Coz</title>
+        <meta charset="utf-8"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        
+		<style>
+
+            #subtitle {
+                font-size:20pt;
+                float:left;
+                font-family: montserrat;
+                font-weight:bold;
+                color:#B5EB95;
+            }
+
+            #body {
+                font-size:15pt;
+                float:left;
+                font-family: montserrat;
+                color:black;
+                width:24%;
+            }
+
+            .image{
+                float:right;
+                width:40%;
+                height:auto;
+                margin-right:30%;
+            }
+
+            #content {
+                float:left;
+                margin-left:10%;
+                margin-top:-5%;
+            }
+
+            @media (max-width:500px) {
+                .image {
+                    float:left;
+                    margin-top:15%;
+                    width: 50%;
+                    margin-left:10%;
+                }
+
+                #body {
+                    width:80%;
+                    margin-top:5%;
+                }
+
+                #content {
+                    margin-top: -30%;
+                }
+
+                #subtitle {
+                    width:200px;
+                }
+            }
+
+		</style>
+
+        <script>
+            $(document).ready(function(){
+                $("#content").hide().fadeIn(1000);
+            });
+        </script>
+
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<img src="name.png" id="logoname">
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html">HOME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar"><a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a></div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+            </div>
+
+            <div id="content">
+                <div id="title">
+                    COZ
+                </div>
+                <br><br><br><br>
+                <div id="subtitle">
+                    Website Design
+                </div>
+                <br><br><br><br>
+                <div id="body">
+                    I was prompted to build a landing page for "coz cafe", a hypothetical LA coffee shop that wants to emphasize their welcoming and comforting environment. I was also given the information that they locally source their coffee beans.
+                    <br><br>
+                    This mockup was built on Figma. 
+                </div>
+                <img class="image" src="coz.jpeg">
+            </div>
+		</div>
+	</body>
+</html>

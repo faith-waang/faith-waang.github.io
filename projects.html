@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<title>Contact Me</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+		<link href="stylesheet.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery.js"></script>
+		
+		<style>
+
+			#outercontainer {
+                background-color:black;
+                /* margin:auto; */
+                height: 100%;
+            }
+
+			#content {
+				float:left;
+				margin-left:15%;
+				margin-top:22%;
+			}
+
+			#letstalk {
+				font-size:19pt;
+                float:left;
+                margin-left:0%;
+                margin-top: 0%;
+                font-family: montserrat;
+				font-weight:bold;
+                color:#B5EB95;
+			}
+
+			#email{
+				font-size:18pt;
+                float:left;
+                margin-left:0%;
+                margin-top:0%;
+                font-family: montserrat;
+				color:white;
+			}
+
+			#email:hover{
+				text-decoration: underline;
+				color:white;
+			}
+
+			.menubar {
+				color:white;
+			}
+
+			a {
+				color:white;
+			}
+
+			a:hover {
+				color:white;
+				text-decoration: underline;
+			}
+
+			#title {
+				color:white;
+			}
+
+			@media (max-width:500px) {
+                /* #content {
+					display:hide;
+				} */
+
+				#title {
+					margin-top:5%;
+				}
+
+				#letstalk {
+					font-size:20px;
+				}
+
+				#email {
+					font-size:16px;
+					margin-top:-3%;
+				}
+            }
+		</style>
+
+		<script>
+		$(document).ready(function(){
+			$("#content").hide().fadeIn(1000);	
+		});
+		</script>
+	</head>
+	
+	<body>
+		<div id="outercontainer">
+			<!-- header -->
+			<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html"><img src="whitelogo.png" id="logoname"></a>
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html">HOME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar"><a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a></div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+			</div>
+
+				<div id="content">
+					<div id="title">
+						CONTACT ME
+					</div>
+
+					<br><br><br><br>
+					<div id="letstalk">
+						Let's talk! HMU :)
+					</div>
+					<br><br><br>
+					<div id="email">
+						<a id="email" href="faithw@usc.edu">faithw@usc.edu</a>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

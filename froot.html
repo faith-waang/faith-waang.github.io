@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>Froot</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.js"></script>
+
+		<style>
+
+            #subtitle {
+                font-size:20pt;
+                float:left;
+                font-family: montserrat;
+                /* width:500px; */
+                /* margin-bottom:2%; */
+                font-weight:bold;
+                color:#B5EB95;
+            }
+
+            #body {
+                font-size:15pt;
+                float:left;
+                font-family: montserrat;
+                color:black;
+                width:80%;
+            }
+
+            .image{
+                float:left;
+                width:40%;
+                height:auto;
+                margin-top:2%;
+                padding:2%;
+            }
+
+            #screenshots{
+                float:left;
+                display:flex;
+                flex:2;
+                margin-left:-2%;
+                margin-bottom:1%;
+            }
+
+            #content {
+                float:left;
+                margin-left:10%;
+                margin-top:-5%;
+            }
+
+            @media (max-width: 500px) {
+                #content {
+                    margin-top: -25%;
+                }
+            }
+
+		</style>
+
+        <script>
+            $(document).ready(function(){
+                $("#content").hide().fadeIn(1000);
+            });
+        </script>
+
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<img src="name.png" id="logoname">
+
+			<div id="nav">
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/portfolio.html">HOME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/aboutme.html">ABOUT ME</a>
+				</div>
+				<br><br><br><br>
+				<div class="menubar"><a href="http://webdev.iyaclasses.com/~faithw/acad275/experience.html">PROJECTS</a></div>
+				<br><br><br><br>
+				<div class="menubar">
+					<a href="http://webdev.iyaclasses.com/~faithw/acad275/projects.html">CONTACT</a>
+				</div>
+            </div>
+
+            <div id="content">
+                <div id="title">
+                    FROOT
+                </div>
+
+                <br><br><br><br>
+
+                <div id="subtitle">
+                    Event Design
+                </div>
+                <br><br><br><br>
+                <div id="body">
+                    My team was assigned to create a branding strategy for Froot, a startup dedicating to creating a platform for women to learn about breast health.
+                    <br><br>
+                    Our proposal was for Froot to launch their app with a pop-up event, or "Froot Stand". The purpose of the Froot Stand would be to welcome their client base and introduce users to the Froot family, creating a sense of loyalty to their brand to promote it and increase downloads.
+                    <br><br>
+                    My role in this project was to render the interior of the Froot Stand. I designed the layout, color design, and setup of the store—this lended a hand to consistent branding of the company.
+                </div>
+
+                <div id="screenshots">
+                    <img class="image" src="froot1.png">
+                    <img class="image" src="froot2.png">
+                </div>
+
+                <div id="body">
+                    I created this by first sketching out my plans in Procreate, then using my sketch as a reference when rendering it using Adobe Dimension. Check out the slide deck (which I also designed) for our branding strategy here.
+                </div>
+            </div>
+				
+		</div>
+	</body>
+</html>
