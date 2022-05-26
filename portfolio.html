@@ -1,0 +1,161 @@
+<html>
+    <head>
+
+        <title>Faith Wang</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+
+        <style>
+
+            #outercontainer {
+                background-color:black;
+                margin:auto;
+                height: 100%;
+            }
+
+            #name {
+                font-size:35pt;
+                float:left;
+                font-family: montserrat;
+                font-weight:bold;
+                color:white;
+            }
+
+            #designer {
+                font-size:15pt;
+                float:left;
+                font-family: montserrat;
+                color:white;
+            }
+
+            #nav {
+				float:right;
+				margin-right:8%;
+				margin-top:6%;
+				text-align:right;
+				width:500px;
+			}
+
+            .menubar {
+                display:flex;
+                text-align:center;
+                display:block;
+                float:right;
+                margin:auto;
+                font-family:montserrat;
+                height:2%;
+                font-size:10pt;
+                margin-left:8%;
+                margin-right:6%;
+                padding:0%;
+                flex:1;
+                color:white;
+            }
+
+            #profilepic {
+                background-image: url(profile.jpg);
+                position:absolute;
+                background-size:250px;
+                background-repeat:no-repeat;
+                background-position-y: 99%;
+                background-position-x: 70%;
+                height:600px;
+                width:900px;
+                margin:auto;
+            }
+
+            #bio {
+                font-family:montserrat;
+                float:left;
+                font-size:16pt;
+                margin-top:26%;
+                margin-left:50%;
+                width:500px;
+            }
+
+            #school{
+                font-family:montserrat;
+                float:left;
+                font-size:25pt;
+                /* margin-top:20%;
+                margin-left:-28.5%;
+                width:500px; */
+                font-weight:bold;
+                color:#B5EB95;
+            }
+
+            #info {
+                float:left;
+                margin-left:15%;
+                margin-top:17%;
+            }
+
+            a {
+                color:white;
+                text-decoration:none;
+            }
+
+            a:hover {
+                color:#B5EB95;
+            }
+
+            @media (max-width:500px) {
+                #name {
+                    font-size:25pt;
+                    margin-top:5%;
+                }
+
+                #designer {
+                    font-size:16px;
+                }
+
+                #school {
+                    font-size:23px;
+                    margin-top:-5%;
+                }
+
+                .menubar {
+                    flex:4;
+                    font-size:11px;
+                    margin-top:5%;
+                }
+
+			}
+        </style>
+
+    </head>
+
+    <body>
+        <div id="outercontainer">
+            <div id="nav">
+                <div class="menubar">
+                    <a href="portfolio.html">HOME</a>
+                </div>
+                <br><br><br>
+                <div class="menubar">
+                    <a href="aboutme.html">ABOUT ME</a>
+                </div>
+                <br><br><br>
+                <div class="menubar"><a href="experience.html">PROJECTS</a></div>
+                <br><br><br>
+                <div class="menubar">
+                    <a href="projects.html">CONTACT</a>
+                </div>
+            </div>
+            <br><br><br>
+            <div id="info">
+                <div id="signature">
+                    <div id="name">FAITH WANG</div>
+                    <br><br><br><br>
+                    <div id="designer">Designer of Things.</div>
+                    <br><br><br>
+                    <div id="school">IYA @ USC</div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
