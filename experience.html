@@ -8,157 +8,31 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 
 		<style>
-
-			.previewimg {
-				width:600px;
-				height:auto;
-				float:left;
+			.nav {
+			background-color: white;
+			overflow: hidden;
+			float:right;
+			margin-right:10%;
+			margin-top:5%;
 			}
 
-			#branche{
-				margin-top:5%;
-				margin-bottom:5%;
+			.nav a {
+				float: left;
+				color: black;
+				font-family: montserrat;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
 			}
 
-			#nooz {
-				float:right;
-				/* margin-top:-11%;
-				margin-left:90%; */
-				position:relative;
+			.nav a:hover {
+			text-decoration: underline;
 			}
 
-			#right {
-				float:right;
+			.nav a.active {
+				text-decoration: underline;
 			}
-
-			#coz {
-				float:left;
-			}
-
-			#froot {
-				float:right;
-				margin-left:50%;
-			}
-
-			#art {
-				float:left;
-			}
-
-			.projectname {
-                font-family:montserrat;
-                float:left;
-                font-size:25pt;
-				font-weight:bold;
-				/* position:absolute; */
-            }
-
-			#projects {
-				position:relative;
-				
-			}
-
-			.intro {
-				float:left;
-			}
-
-			.description {
-				font-family:montserrat;
-                float:left;
-                font-size:15pt;
-				font-weight:bold;
-				color:#B5EB95;
-				/* position:absolute; */
-			}
-
-			.previewimg:hover{
-				box-shadow: 5px 5px #dddfd2;
-				zoom:101%;
-				transition:2s;
-			}
-
-			#content {
-				float:left;
-				width:80%;
-				margin-left:10%;
-			}
-
-
-			@media (max-width:600px) {
-                .previewimg {
-					width:80%;
-					margin-left:10%;
-				}
-
-				#title {
-					font-size:24pt;
-					margin-bottom:10%;
-				}
-
-				#content {
-					margin-top: -25%;
-				}
-
-				#email {
-					font-size:16px;
-					margin-top:-3%;
-				}
-
-				.intro {
-					margin-top:-70%;
-					margin-left:10%;
-				}
-
-				.projectname {
-					margin-top:-10%;
-				}
-
-				#nooz {
-					margin-top:-20%;
-				}
-
-				#description {
-					margin-top:-40%;
-				}
-
-				#froot {
-					width:250px;
-					margin-right:5%;
-				}
-
-				#cozname {
-					margin-top:-30%;
-				}
-
-				#cozdescription {
-					margin-top:-25%;
-				}
-
-				#frootname {
-					margin-top: -55%;
-					margin-left:-25%;
-				}
-
-				#frootdescription {
-					margin-top: -55%;
-					margin-left:-25%;
-				}
-
-				#artname {
-					margin-top: -30%;
-				}
-
-				#artdescription {
-					margin-top:-30%;
-				}
-
-				#branchedescription {
-					margin-top:-10%;
-				}
-
-				#noozdescription {
-					margin-top: -10%;
-				}
-            }
 		</style>
 
 		<script>
@@ -176,128 +50,69 @@
 	<body>
 		<div id="outercontainer">
 
-			<img src="name.png" id="logoname">
-
-			<div id="nav">
-				<div class="menubar">
-					<a href="portfolio.html">HOME</a>
-				</div>
-
-				<br><br><br>
-
-				<div class="menubar">
-					<a href="aboutme.html">ABOUT ME</a>
-				</div>
-
-				<br><br><br>
-
-				<div class="menubar"><a href="experience.html">PROJECTS</a></div>
-
-				<br><br><br>
-
-				<div class="menubar">
-					<a href="projects.html">CONTACT</a>
-				</div>
-			</div>
+			<!-- navbar -->
+			<div class="nav">
+				<a href="portfolio.html">Home</a>
+				<a href="aboutme.html">About Me</a>
+				<a class="active" href="experience.html">Work</a>
+				<a href="projects.html">Contact</a>
+			  </div> 
 
 			<div id="content">
 				<div id="title">
 					RECENT PROJECTS
 				</div>
 
-				<br><br><br>
+				<br><br><br><br><br><br>
 
-				<!-- <div class="projects"> -->
-
-					<!--branche-->
-					<div id="branche">
-						<a href="branche.html">
-							<img src="branche.jpeg" class="previewimg">
-						</a>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-						<div class="intro">
-							<div class="projectname" id="branchename">
-								Branche
+					<div id="row">
+						<div class="branche"> 
+							<a href="branche.html">
+								<img class="previewimg" src="branche.jpeg">
+							</a>
+							<div class="words">
+								<div class="projectname">Branche</div>
+								<div class="description">Webapp Interface</div>
 							</div>
-								<br><br><br>
-							<div class="description" id="branchedescription">
-								Interface Design
+						</div>
+				   
+						<div class="nooz">
+							<a href="nooz.html">
+								<img class="previewimg" src="nooz.png" style="border:1px solid black">
+							</a>
+							<div class="words">
+								<div class="projectname">Nooz</div>
+								<div class="description">News App</div>
 							</div>
 						</div>
 					</div>
 
-					<!--nooz-->
-					<div id="nooz">
-						<a href="nooz.html">
-						<img src="nooz.png" class="previewimg">
-						</a>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-						<div class="intro">
-							<div class="projectname">
-								Nooz
+					<br><br><br><br><br><br>
+
+					<div id="row">
+						<div class="coz"> 
+							<a href="coz.html">
+								<img class="previewimg" src="cozcover.jpeg">
+							</a>
+							<div class="words">
+								<div class="projectname">Coz</div>
+								<div class="description">Coffee Shop Website</div>
 							</div>
-							<br><br><br>
-							<div class="description" id="noozdescription">
-								Interface Design
+						</div>
+				   
+						<div class="froot">
+							<a href="froot.html">
+								<img class="previewimg" src="froot.jpeg">
+							</a>
+							<div class="words">
+								<div class="projectname">Froot</div>
+								<div class="description">Pop-Up Event</div>
 							</div>
 						</div>
 					</div>
 
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br>
 
-					<!--coz-->
-					<div id="coz">
-						<a href="coz.html">
-							<img src="cozcover.jpeg" class="previewimg" id="coz">
-						</a>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-						<div class="intro">
-							<div class="projectname" id="cozname">
-								Coz Cafe
-							</div>
-								<br><br><br>
-							<div class="description" id="cozdescription">
-								Web Design
-							</div>
-						</div>
-					</div>
-
-					<!--froot-->
-					<div id="froot">
-						<a href="froot.html">
-							<img src="froot.jpeg" class="previewimg" id="froot">
-						</a>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-						<div class="intro">
-							<div class="projectname" id="frootname">
-								Froot
-							</div>
-								<br>
-								<br>
-								<br>
-							<div class="description" id="frootdescription">
-								Event Design
-							</div>
-						</div>
-					</div>
-
-					<!--art-->
-					<div id="art">
-						<a href="art.html">
-							<img src="art.jpeg" class="previewimg" id="art">
-						</a>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-						<div class="intro">
-							<div class="projectname" id="artname">
-								Art
-							</div>
-								<br><br><br>
-							<div class="description" id="artdescription">
-								Passion Projects
-							</div>
-						</div>
-					</div>
-				<!-- </div>
 			</div>
 		</div>
 	</body>

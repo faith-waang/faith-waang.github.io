@@ -9,6 +9,31 @@
         <script src="http://code.jquery.com/jquery.js"></script>
         
 		<style>
+            .nav {
+			background-color: white;
+			overflow: hidden;
+			float:right;
+			margin-right:10%;
+			margin-top:5%;
+			}
+
+			.nav a {
+				float: left;
+				color: black;
+				font-family: montserrat;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+			}
+
+			.nav a:hover {
+			text-decoration: underline;
+			}
+
+			.nav a.active {
+				text-decoration: underline;
+			}
 
             #subtitle {
                 font-size:20pt;
@@ -23,19 +48,20 @@
                 float:left;
                 font-family: montserrat;
                 color:black;
-                width:24%;
+                width:40%;
             }
 
             .image{
                 float:right;
                 width:40%;
-                height:auto;
-                margin-right:30%;
+                margin-right:5%;
+                margin-top:-10%;
             }
 
             #content {
                 float:left;
                 margin-left:10%;
+                margin-bottom:5%;
             }
 
             @media (max-width:500px) {
@@ -72,25 +98,13 @@
 	<body>
 		<div id="outercontainer">
 
-			<a href="portfolio.html"><img src="name.png" id="logoname"></a>
-
-			<div id="nav">
-				<div class="menubar">
-					<a href="portfolio.html">HOME</a>
-				</div>
-				<br><br><br>
-				<div class="menubar">
-                    <a href="experience.html">PROJECTS</a>
-                </div>
-				<br><br><br>
-                <div class="menubar">
-					<a href="aboutme.html">ABOUT ME</a>
-				</div>
-				<br><br><br>
-				<div class="menubar">
-					<a href="projects.html">CONTACT</a>
-				</div>
-            </div>
+			<!-- navbar -->
+			<div class="nav">
+				<a href="portfolio.html">Home</a>
+				<a href="aboutme.html">About Me</a>
+				<a class="active" href="experience.html">Work</a>
+				<a href="projects.html">Contact</a>
+			  </div> 
 
             <div id="content">
                 <div id="title">
@@ -98,7 +112,7 @@
                 </div>
                 <br><br><br><br>
                 <div id="subtitle">
-                    Website Design
+                    Coffee Shop Website <3
                 </div>
                 <br><br><br><br>
                 <div id="body">

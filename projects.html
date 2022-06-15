@@ -8,53 +8,40 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 		
 		<style>
+			body {
+				background-color: black;
+			}
 
-			#outercontainer {
-                background-color:black;
-                /* margin:auto; */
-                height: 100%;
+			.nav {
+				background-color: black;
+				overflow: hidden;
+				float:right;
+				margin-right:10%;
+                margin-top:5%;
+			}
+
+            .nav a {
+                float: left;
+                color: white;
+                font-family: montserrat;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .nav a:hover {
+            text-decoration: underline;
+            }
+
+            .nav a.active {
+                text-decoration: underline;
             }
 
 			#content {
 				float:left;
 				margin-left:15%;
-				margin-top:22%;
-			}
-
-			#letstalk {
-				font-size:19pt;
-                float:left;
-                margin-left:0%;
-                margin-top: 0%;
-                font-family: montserrat;
-				font-weight:bold;
-                color:#B5EB95;
-			}
-
-			#email{
-				font-size:18pt;
-                float:left;
-                margin-left:0%;
-                margin-top:0%;
-                font-family: montserrat;
-				color:white;
-			}
-
-			#email:hover{
-				text-decoration: underline;
-				color:white;
-			}
-
-			.menubar {
-				color:white;
-			}
-
-			a {
-				color:white;
-			}
-
-			a:hover {
-				color:#B5EB95;
+				margin-top:15%;
 			}
 
 			#title {
@@ -62,9 +49,6 @@
 			}
 
 			@media (max-width:500px) {
-                /* #content {
-					display:hide;
-				} */
 
 				#title {
 					margin-top:5%;
@@ -90,24 +74,13 @@
 	
 	<body>
 		<div id="outercontainer">
-			<!-- header -->
-			<a href="portfolio.html"><img src="whitelogo.png" id="logoname"></a>
 
-			<div id="nav">
-				<div class="menubar">
-					<a href="portfolio.html">HOME</a>
-				</div>
-				<br><br><br>
-				<div class="menubar">
-					<a href="aboutme.html">ABOUT ME</a>
-				</div>
-				<br><br><br>
-				<div class="menubar"><a href="experience.html">PROJECTS</a></div>
-				<br><br><br>
-				<div class="menubar">
-					<a href="projects.html">CONTACT</a>
-				</div>
-			</div>
+			<div class="nav">
+				<a href="portfolio.html">Home</a>
+				<a href="aboutme.html">About Me</a>
+				<a href="experience.html">Work</a>
+				<a class="active" href="projects.html">Contact</a>
+			  </div> 
 
 				<div id="content">
 					<div id="title">

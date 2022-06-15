@@ -1,11 +1,240 @@
-#outercontainer {
-    background-color:white;
-    /* f8f9f0 */
-    margin:auto;
-    height:auto;
-    padding-bottom: 15%;
-    overflow:auto;
+/* CONTACT */
+#letstalk {
+    font-size:19pt;
+    float:left;
+    margin-left:0%;
+    margin-top: 0%;
+    font-family: montserrat;
+    font-weight:bold;
+    color:#B5EB95;
 }
+
+#email{
+    font-size:18pt;
+    float:left;
+    margin-left:0%;
+    margin-top:0%;
+    font-family: montserrat;
+    color:white;
+}
+
+#email:hover{
+    text-decoration: underline;
+    color:white;
+}
+
+/* PROJECTS */
+.previewimg {
+    width:600px;
+    height:auto;
+    float:left;
+}
+
+.branche{
+    float:left;
+    flex:1;
+}
+
+.nooz {
+    float:left;
+    flex:1;
+}
+
+#right {
+    float:right;
+}
+
+.coz {
+    float:left;
+    flex:1;
+}
+
+.froot {
+    float:left;
+    flex:1;
+}
+
+#art {
+    float:left;
+}
+
+.projectname {
+    font-family:montserrat;
+    float:left;
+    font-size:25pt;
+    font-weight:bold;
+    /* position:absolute; */
+}
+
+#projects {
+    position:relative;
+    
+}
+
+.intro {
+    float:left;
+}
+
+.description {
+    font-family:montserrat;
+    float:left;
+    font-size:15pt;
+    font-weight:bold;
+    color:#B5EB95;
+    /* position:absolute; */
+}
+
+.previewimg:hover{
+    opacity:50%;
+}
+
+#content {
+    float:left;
+    width:80%;
+    margin-left:10%;
+    margin-top:15%;
+}
+
+#row {
+    display:flex;
+}
+
+.words {
+    display:flex;
+    flex-direction: column;
+    margin-top:68%;
+}
+
+@media (max-width:600px) {
+    .previewimg {
+        width:80%;
+        margin-left:10%;
+    }
+
+    #title {
+        font-size:24pt;
+        margin-bottom:10%;
+    }
+
+    #content {
+        margin-top: -25%;
+    }
+
+    #email {
+        font-size:16px;
+        margin-top:-3%;
+    }
+
+    .intro {
+        margin-top:-70%;
+        margin-left:10%;
+    }
+
+    .projectname {
+        flex:1;
+    }
+
+    #nooz {
+        /* margin-top:-20%; */
+    }
+
+    #description {
+        flex:1;
+    }
+
+    #froot {
+        width:250px;
+        margin-right:5%;
+    }
+
+    #cozname {
+        margin-top:-30%;
+    }
+
+    #cozdescription {
+        margin-top:-25%;
+    }
+
+    #frootname {
+        margin-top: -55%;
+        margin-left:-25%;
+    }
+
+    #frootdescription {
+        margin-top: -55%;
+        margin-left:-25%;
+    }
+
+    #artname {
+        margin-top: -30%;
+    }
+
+    #artdescription {
+        margin-top:-30%;
+    }
+
+    #branchedescription {
+        margin-top:-10%;
+    }
+
+    #noozdescription {
+        margin-top: -10%;
+    }
+}
+
+/* ABOUT ME */
+#pfp {
+    width:20%;
+    height:auto;
+    float:left;
+    margin-right:3%;
+}
+
+#myname {
+    font-family:montserrat;
+    float:left;
+    font-size:20pt;
+    font-weight:bold;
+    color:black;
+}
+
+#location {
+    font-family:montserrat;
+    float:left;
+    font-size:17pt;
+    color:#B5EB95;
+    font-weight:bold;
+}
+
+#resumebutton {
+    font-family:montserrat;
+    float:left;
+    font-size:12pt;
+    border: solid 1px black;
+    border-radius:12px;
+    background-color:white;
+    padding:3px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#resumebutton:hover{
+    background-color:#B5EB95;
+}
+
+#content {
+    float:left;
+    margin-left:10%;
+    margin-top:6%;
+}
+
+a:hover {
+    color:#B5EB95;
+}
+
+
+
+
 
 #nav {
     float:right;
@@ -13,19 +242,6 @@
     margin-top:6%;
     text-align:right;
     width:500px;
-}
-
- .menubar {
-    text-align:center;
-    display:block;
-    float:right;
-    margin:auto;
-    font-family:montserrat;
-    height:2%;
-    font-size:10pt;
-    margin-left:8%;
-    margin-right:6%;
-    color:black;
 }
 
 a {
@@ -55,6 +271,110 @@ a:hover {
     font-family: montserrat;
     font-weight:bold;
     color:black;
+}
+
+#name {
+    font-size:35pt;
+    float:left;
+    font-family: montserrat;
+    font-weight:bold;
+    color:white;
+}
+
+#designer {
+    font-size:15pt;
+    float:left;
+    font-family: montserrat;
+    color:#B5EB95;
+}
+
+#nav {
+    float:right;
+    margin-right:8%;
+    margin-top:6%;
+    text-align:right;
+    width:500px;
+}
+
+#menubar {
+    display:block;
+    float:left;
+    margin:auto;
+    font-family:montserrat;
+    font-size:12pt;
+    color:white;
+    width:100%;
+}
+
+#profilepic {
+    background-image: url(profile.jpg);
+    position:absolute;
+    background-size:250px;
+    background-repeat:no-repeat;
+    background-position-y: 99%;
+    background-position-x: 70%;
+    height:600px;
+    width:900px;
+    margin:auto;
+}
+
+#bio {
+    font-family:montserrat;
+    float:left;
+    font-size:16pt;
+    margin-top:26%;
+    margin-left:50%;
+    width:500px;
+}
+
+#school{
+    font-family:montserrat;
+    float:left;
+    font-size:25pt;
+    /* margin-top:20%;
+    margin-left:-28.5%;
+    width:500px; */
+    font-weight:bold;
+    color:#B5EB95;
+}
+
+#info {
+    float:left;
+    margin-left:15%;
+    margin-top:25%;
+}
+
+a {
+    color:white;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#B5EB95;
+}
+
+@media (max-width:500px) {
+    #name {
+        font-size:25pt;
+        margin-top:5%;
+    }
+
+    #designer {
+        font-size:16px;
+    }
+
+    #school {
+        font-size:23px;
+        margin-top:-5%;
+    }
+
+    .menubar {
+        flex:4;
+        font-size:11px;
+        margin-top:5%;
+        color:black;
+    }
+
 }
 
 @media (max-width:500px) {

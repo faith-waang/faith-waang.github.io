@@ -10,83 +10,47 @@
 	
 		<style>
 
-					#body {
-						font-size:15pt;
-						float:left;
-						font-family: montserrat;
-						color:black;
-						margin-left:25%;
-						margin-top:-17%;
-						padding-right:25%;
-					}
+			body {
+				background-color: white;
+			}
 
-					#pfp {
-						width:20%;
-						height:auto;
-						float:left;
-						margin-right:3%;
-						/* margin-top: 23%;
-						margin-left:-15%; */
-					}
+			#body {
+				font-size:15pt;
+				float:left;
+				font-family: montserrat;
+				color:black;
+				margin-left:25%;
+				margin-top:-17%;
+				padding-right:25%;
+			}
 
-					#name {
-						font-family:montserrat;
-						float:left;
-						font-size:20pt;
-						font-weight:bold;
-						/* margin-left:40%;
-						margin-top:-25%; */
-					}
+			.nav {
+			background-color: white;
+			overflow: hidden;
+			float:right;
+			margin-right:10%;
+			margin-top:5%;
+			}
 
-					#location {
-						font-family:montserrat;
-						float:left;
-						font-size:17pt;
-						color:#B5EB95;
-						font-weight:bold;
-					}
+			.nav a {
+				float: left;
+				color: black;
+				font-family: montserrat;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+			}
 
-					#resumebutton {
-						font-family:montserrat;
-						float:left;
-						font-size:12pt;
-						border-width:1px;
-						border-radius:12px;
-						background-color:white;
-						padding:3px;
-						padding-left:5px;
-						padding-right:5px;
-						/* margin-left:40%;
-						margin-top:-25%; */
-					}
+			.nav a:hover {
+			text-decoration: underline;
+			}
 
-					#resumebutton:hover{
-						background-color:#B5EB95;
-						/* box-shadow: 4px 4px #dddfd2; */
-					}
-
-					#content {
-						float:left;
-						margin-left:10%;
-						margin-top:-4%;
-					}
-
-					a:hover {
-                		color:#B5EB95;
-            		}
-
-					#menubar {
-						height:18px;
-					}
-
-					#menubar:hover {
-						color:#B5EB95;
-					}
+			.nav a.active {
+				text-decoration: underline;
+			}
 
 					@media (max-width:500px) {
-						#name {
-							color:black;
-						}
 
 						#pfp {
 							width:50%;
@@ -122,37 +86,26 @@
 			});
 		</script>
 	</head>
+
+
 	<body>
-		<div id="outercontainer">
+			<!-- navbar -->
+			<div class="nav">
+				<a href="portfolio.html">Home</a>
+				<a class="active" href="aboutme.html">About Me</a>
+				<a href="experience.html">Work</a>
+				<a href="projects.html">Contact</a>
+			  </div> 
 
-			<a href="portfolio.html"><img src="name.png" id="logoname"></a>
-
-			<div id="nav">
-				<div class="menubar">
-					<a href="portfolio.html">HOME</a>
-				</div>
-				<br><br><br>
-				<div class="menubar">
-					<a href="experience.html">PROJECTS</a>
-				</div>
-				<br><br><br>
-				<div class="menubar">
-					<a href="aboutme.html">ABOUT ME</a>
-				</div>
-				<br><br><br>
-				<div class="menubar">
-					<a href="projects.html">CONTACT</a>
-				</div>
-			</div>
-
-			<div id="content">
+			<!-- content -->
+            <div id="content">
 				<div id="title">
 					ABOUT ME
 				</div>
 				<br><br><br><br><br><br>
 				<img id="pfp" src="profile.jpg">
 				<div id="body">
-					<div id="name">Faith Wang</div>
+					<div id="myname">Faith Wang</div>
 					<br><br>
 					<div id="location">Chicago - Los Angeles</div>
 					<br><br>
@@ -162,6 +115,6 @@
 						<button type="button" id="resumebutton">MY RESUME</button>
 					</a>
 				</div>
-			</div>
+            </div>
 	</body>
 </html>
