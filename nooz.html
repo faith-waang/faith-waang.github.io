@@ -6,37 +6,38 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
         <link href="stylesheet.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
 
 		<style>
 
             .nav {
-			background-color: white;
-			overflow: hidden;
-			float:right;
-			margin-right:10%;
-			margin-top:5%;
-			}
+                    background-color: white;
+                    overflow: hidden;
+                    float:right;
+                    margin-right:10%;
+                    margin-top:5%;
+                    font-family:inter;
+                }
 
-			.nav a {
-				float: left;
-				color: black;
-				font-family: montserrat;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-size: 17px;
-			}
+                .nav a {
+                    float: left;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
 
-			.nav a:hover {
-			text-decoration: underline;
-			}
+                .nav a:hover {
+                text-decoration: underline;
+                }
 
-			.nav a.active {
-				text-decoration: underline;
-			}
+                .nav a.active {
+                    text-decoration: underline;
+                }
 
             #subtitle {
-                font-size:20pt;
+                font-size:18pt;
                 float:left;
                 font-family: montserrat;
                 font-weight:bold;
@@ -46,9 +47,9 @@
             #body {
                 font-size:15pt;
                 float:left;
-                font-family: montserrat;
+                font-family: inter;
                 color:black;
-                width:90%;
+                width:100%;
             }
 
             .image{
@@ -86,20 +87,6 @@
 		</style>
 
         <script>
-            // var images = new Array;
-            //     images[0] = "nooz1.png";
-            //     images[1] = "nooz2.png";
-            //     images[2] = "nooz3.png";
-            //     images[3] = "nooz4.png";
-            //     images[4] = "nooz5.png";
-            //     images[5] = "nooz6.png";
-
-            // document.querySelector("#button").addEventListener("click", function(){
-            //     for (var i=0; i<images.length; i++) {
-            //         document.querySelector("#images").innerHTML = '<img src="' + images[i] + '">';
-            //     }
-            // })
-            
             $(document).ready(function(){
                 $("#content").hide().fadeIn(1000);
             });
@@ -114,10 +101,8 @@
 
 			<!-- navbar -->
 			<div class="nav">
-				<a href="portfolio.html">Home</a>
-				<a href="aboutme.html">About Me</a>
 				<a class="active" href="experience.html">Work</a>
-				<a href="projects.html">Contact</a>
+				<a href="aboutme.html">About</a>
 			  </div> 
 
             <div id="content">
@@ -130,7 +115,6 @@
                     News App
                 </div>
                 <br><br><br><br>
-                <img style="width:90%; border:solid 1px black; margin-bottom:3%" src="noozov.jpg">
                 <div id="body">
                     My team was tasked with reimagining the news to make local news more accessible and received by greater audiences. Our proposal was Nooz.
                     <br><br>
@@ -138,18 +122,8 @@
                     <br><br>
                     This app interface was designed in the span of a week in conjunction with a graphic designer, primarily using Figma.
                 </div>
-
-                <!-- <div id="screenshots">
-                    <img class="image" src="nooz1.png">
-                    <img class="image" src="nooz2.png">
-                    <img class="image" src="nooz3.png">
-                </div>
-
-                <div id="screenshots">
-                    <img class="image" src="nooz4.png">
-                    <img class="image" src="nooz5.png">
-                    <img class="image" src="nooz6.png">
-                </div> -->
+                <br><br><br><br>
+                <img style="width:100%; margin-bottom:3%; margin-top:5%;" src="noozov.jpg">
             </div>
 		</div>
 	</body>

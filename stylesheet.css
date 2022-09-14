@@ -25,7 +25,7 @@
 
 /* PROJECTS */
 .previewimg {
-    width:600px;
+    width:80%;
     height:auto;
     float:left;
 }
@@ -102,7 +102,7 @@
 .words {
     display:flex;
     flex-direction: column;
-    margin-top:68%;
+    margin-top:65%;
 }
 
 @media (max-width:600px) {
@@ -114,10 +114,6 @@
     #title {
         font-size:24pt;
         margin-bottom:10%;
-    }
-
-    #content {
-        margin-top: -25%;
     }
 
     #email {
@@ -207,7 +203,7 @@
 }
 
 #resumebutton {
-    font-family:montserrat;
+    font-family:inter;
     float:left;
     font-size:12pt;
     border: solid 1px black;
@@ -266,7 +262,7 @@ a:hover {
 }
 
 #title {
-    font-size:35pt;
+    font-size:28pt;
     float:left;
     font-family: montserrat;
     font-weight:bold;
@@ -353,6 +349,10 @@ a:hover {
     color:#B5EB95;
 }
 
+.nav {
+    font-family:inter;
+}
+
 @media (max-width:500px) {
     #name {
         font-size:25pt;
@@ -373,6 +373,32 @@ a:hover {
         font-size:11px;
         margin-top:5%;
         color:black;
+    }
+
+    .nav {
+        background-color: white;
+        overflow: hidden;
+        float:right;
+        margin-right:10%;
+        margin-top:5%;
+        font-family:inter;
+    }
+
+    .nav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .nav a:hover {
+    text-decoration: underline;
+    }
+
+    .nav a.active {
+        text-decoration: underline;
     }
 
 }

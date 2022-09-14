@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 		<link href="stylesheet.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
 		<style>
 			.nav {
@@ -19,11 +20,11 @@
 			.nav a {
 				float: left;
 				color: black;
-				font-family: montserrat;
+				font-family: inter;
 				text-align: center;
 				padding: 14px 16px;
 				text-decoration: none;
-				font-size: 17px;
+				font-size: 18px;
 			}
 
 			.nav a:hover {
@@ -33,10 +34,15 @@
 			.nav a.active {
 				text-decoration: underline;
 			}
+
+			#row {
+				width:110%;
+			}
 		</style>
 
 		<script>
 			$(document).ready(function(){
+				$("#outercontainer").hide().fadeIn(1000);
 				$("#branche").hide().fadeIn(1000);
 				$("#nooz").hide().fadeIn(1000);
 				$("#coz").hide().fadeIn(1000);
@@ -51,12 +57,10 @@
 		<div id="outercontainer">
 
 			<!-- navbar -->
-			<div class="nav">
-				<a href="portfolio.html">Home</a>
-				<a href="aboutme.html">About Me</a>
-				<a class="active" href="experience.html">Work</a>
-				<a href="projects.html">Contact</a>
-			  </div> 
+				<div class="nav">
+					<a class="active" href="experience.html">Work</a>
+					<a href="aboutme.html">About</a>
+				  </div> 
 
 			<div id="content">
 				<div id="title">
