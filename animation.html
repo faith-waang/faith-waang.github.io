@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title>Other Works</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+
+
+		<style>
+
+            .nav {
+			background-color: white;
+			overflow: hidden;
+			float:right;
+			margin-right:10%;
+			margin-top:5%;
+			}
+
+			.nav a {
+				float: left;
+				color: black;
+				font-family: inter;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 18px;
+			}
+
+			.nav a:hover {
+			text-decoration: underline;
+			}
+
+			.nav a.active {
+				text-decoration: underline;
+			}
+
+            #subtitle {
+                font-size:18pt;
+                float:left;
+                font-family: montserrat;
+                font-weight:bold;
+                color:#B5EB95;
+            }
+
+            #body {
+                font-size:15pt;
+                float:left;
+                font-family: inter;
+                color:black;
+                width:100%;
+            }
+
+            .image{
+                float:left;
+                /* margin:auto; */
+                width:40%;
+                height:auto;
+                padding:2%;
+                margin-left:-2%;
+            }
+
+            #screenshots{
+                float:left;
+                display:flex;
+                flex:2;
+                text-align: center;
+                margin-top:2%;
+            }
+
+            #content {
+                float:left;
+				margin-left:10%;
+            }
+
+            @media (max-width:500px) {
+                #content {
+                    margin-top: -30%;
+                }
+
+                #screenshots {
+                    flex:1;
+                    margin-top: 10%;
+                }
+            }
+
+		</style>
+        <script>
+            $(document).ready(function(){
+                $("#content").hide().fadeIn(1000);
+            });
+        </script>
+	</head>
+	<body>
+		<div id="outercontainer">
+
+			<!-- navbar -->
+			<div class="nav">
+                <a href="portfolio.html">Home</a>
+				<a class="active" href="experience.html">Work</a>
+				<a href="aboutme.html">About</a>
+			  </div> 
+
+            <div id="content">
+                <div id="title">
+                    MY OTHER ENDEAVORS
+                </div>
+
+                <br><br><br><br>
+                <div id="subtitle">
+                    Dipping my toes into other fun things :)
+                </div>
+                <br><br><br><br>
+                <div id="body">
+                    Lyric video for one of my favorite songs. Graphics made in Illustrator and animated in After Effects
+                    <br><br>
+                    <video controls="controls" style="width:50%; margin:auto"><source src="animation.mp4" type="video/mp4"></video>
+
+                    <br><br><br><br>
+                    Looping ball animation created in After Effects.
+                    <br><br>
+                    <video controls loop style="width:50%; margin:auto"><source src="anim2.mp4" type="video/mp4"></video>
+                </div>
+
+            </div>
+				
+		</div>
+	</body>
+</html>
