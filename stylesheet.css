@@ -54,6 +54,11 @@
     flex:1;
 }
 
+.other {
+    float:left;
+    flex:1;
+}
+
 #art {
     float:left;
 }
@@ -354,6 +359,10 @@ a:hover {
 }
 
 @media (max-width:500px) {
+
+    body {
+        background-color: red;
+    }
     #name {
         font-size:25pt;
         margin-top:5%;
@@ -401,9 +410,6 @@ a:hover {
         text-decoration: underline;
     }
 
-}
-
-@media (max-width:500px) {
     .menubar {
         font-size:8pt;
         margin-bottom:0px;
