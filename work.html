@@ -24,65 +24,41 @@
                     <li class="nav-item">
                         <a class="nav-link" style="text-decoration:underline; text-decoration-color: #81ff42; text-decoration-thickness:2px;" id="work" href="work.html">work</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" id="play" href="#">play</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="contact" href="#">contact</a>
-                    </li> -->
                 </ul>
             </div>
         </nav>
 
         <div id="content">
-            <div class="block">
-                <div class="title" style="float:left">Nooz</div>
+            <div id="nooz" class="block">
+                <div class="title">Nooz</div>
                 <br>
                 <div class="des" style="float:left">A new form of news.</div>
-                <img class="preview" src="noozov.jpg" style="border:solid 1px black">
+                <a href="noozn.html"><img class="preview" src="nooz/noozov.jpg"></a>
             </div>
 
 
-            <div id="branche" class="block">
-                <div class="title" style="float:left">Branche</div>
-                <br>
-                <div class="des" style="float:left">A new form of news.</div>
-                <img class="preview" src="noozov.jpg" style="border:solid 1px black">
-            </div>
-
-            <div id="froot" class="block">
-                <div class="title" style="float:left">Froot</div>
-                <br>
-                <div class="des" style="float:left">A new form of news.</div>
-                <img class="preview" src="noozov.jpg" style="border:solid 1px black">
-            </div>
-
-            <div id="coz" class="block" style="margin-bottom:5%">
+            <div id="coz" class="block">
                 <div class="title" style="float:left">Coz</div>
                 <br>
-                <div class="des" style="float:left">A new form of news.</div>
-                <img class="preview" src="noozov.jpg" style="border:solid 1px black">
+                <div class="des" style="float:left">Homepage for a coffee shop.</div>
+                <a href="cozn.html"><img class="preview" src="cozcover.jpeg"></a>
+            </div>
+
+            <div id="dfa" class="block">
+                <div class="title" style="float:left">DFA Financing Futures</div>
+                <br>
+                <div class="des" style="float:left; width:50%">Project with Discover for the Design For America national project.</div>
+                <a href="dfa.html"><img class="preview" src="dfa.png"></a>
             </div>
 
             <div id="other" class="block" style="margin-bottom:5%">
-                <div class="title" style="float:left">Other Works</div>
+                <div class="title" style="float:left">More!</div>
                 <br>
-                <div class="des" style="float:left">A new form of news.</div>
-                <img class="preview" src="noozov.jpg" style="border:solid 1px black">
+                <div class="des" style="float:left; width:50%">My exploration into miscellaneous mediums.</div>
+                <a href="other.html"><img class="preview" src="froot.jpeg"></a>
             </div>
         </div>
-
-
-        <footer class="mt-auto">
-            <div class="footer">
-                <a id="email" href="mailto: faithw@usc.edu">email</a> - <a id="linkedin" href="https://linkedin.com/in/faithwang003/">linkedin</a> - <a id="resume" href="faithwangresume.pdf">resume</a>
-            </div>
-        </footer>
-
-
-
-
-
+            
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
         <script src="main.js">
             var ready = (callback) => {
@@ -95,5 +71,20 @@
         </script>
 
 	</body>
+    
+    <footer class="workfooter d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="foot mb-3 mb-md-0 text-muted">site built with &lt;3 by faith wang</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="mailto: faithw@usc.edu">email</a></li>
+          <li class="ms-3"><a class="text-muted" href="https://linkedin.com/in/faithwang003/">linkedin</a></li>
+          <li class="ms-3"><a class="text-muted" href="faithwangresume.pdf">resume</a></li>
+        </ul>
+      </footer>
 	
 </html>

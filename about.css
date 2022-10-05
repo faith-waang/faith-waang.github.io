@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: inter;
+    src: url(Inter-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: inter;
+    src: url(Inter-Medium.ttf);
+    font-weight:100;
+  }
+  
+  @font-face {
+    font-family: inter;
+    src: url(Inter-SemiBold.ttf);
+    font-weight:bold;
+  }
+
+body {
+    padding-bottom: 5%;
+}
+
+a {
+    color:black;
+}
+
+a:hover {
+    color:black;
+}
+
+#email:hover {
+    text-decoration: underline;
+    text-decoration-color:#00bdfd;
+}
+
+#linkedin:hover {
+    text-decoration: underline;
+    text-decoration-color:#81ff42;
+}
+
+#resume:hover {
+    text-decoration: underline;
+    text-decoration-color:#ff8455
+}
+
+.pfp {
+    margin-top:10%;
+    margin-left:11%;
+    width:15%;
+}
+
+#bio {
+    margin-left:35%;
+    margin-top:-11%;
+    width:40%;
+    font-size: 20px;
+}
+
+#bio p{
+    font-size: 18px;
+}
+
+.title {
+    float:left;
+    font-weight:bold;
+}

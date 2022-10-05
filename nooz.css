@@ -1,0 +1,32 @@
+h2 {
+    font-size:20px;
+}
+
+body {
+    font-size:18px;
+}
+
+#carousel {
+    float:left;
+}
+
+.carousel-control-next {
+    filter: invert(100%);
+    margin-right:30%;
+}
+
+.carousel-control-prev {
+    filter: invert(100%);
+    margin-left:-20%;
+}
+
+.carousel {
+    float:right;
+    top:-750px;
+    width:40%;
+    margin-right:10%;
+}
+
+#story {
+    width:40%;
+}

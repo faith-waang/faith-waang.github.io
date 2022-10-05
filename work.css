@@ -1,0 +1,60 @@
+@font-face {
+    font-family: inter;
+    src: url(Inter-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: inter;
+    src: url(Inter-Medium.ttf);
+    font-weight:100;
+  }
+  
+  @font-face {
+    font-family: inter;
+    src: url(Inter-SemiBold.ttf);
+    font-weight:bold;
+  }
+
+  #content {
+      height:100%;
+      margin-left:11%;
+  }
+
+.block {
+    font-size: 22px;
+    margin-top:6%;
+    margin-right:15%;
+    float:left;
+}
+
+.des {
+    font-size: 18px;
+}
+
+.preview {
+    margin-top:-2%;
+    width:40%;
+    float:right;
+    margin-right:3%;
+    border:solid 1px black
+}
+
+hr{
+    background-color:#ff8455;
+    width:78%;
+    height:0.5px;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#branche {
+    margin-top:5%;
+}
+
+#other img:hover {
+    border:2px solid #ffe800;
+}

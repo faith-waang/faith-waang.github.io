@@ -1,78 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Faith Wang</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-        <link href="stylesheet.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
-        
-
-        <style>
-            body {
-                background-color: black;
-            }
-
-            .nav {
-				background-color: black;
-				overflow: hidden;
-				float:right;
-				margin-right:10%;
-                margin-top:5%;
-                font-family:'Inter', sans-serif;
-			}
-
-            .nav a {
-                float: left;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 18px;
-            }
-
-            .nav a:hover {
-            text-decoration: underline;
-            }
-
-            .nav a.active {
-                text-decoration: underline;
-            }
-        </style>
-
-    </head>
-
-    <body>
-
-        <div id="outercontainer">
-            
-            <div class="nav">
-	                <a href="portfolio.html">Home</a>
-
-				<a href="experience.html">Work</a>
-				<a href="aboutme.html">About</a>
-			  </div> 
-
-            <div id="info">
-                <div id="signature">
-                    <div id="name">FAITH WANG</div>
-                    <br><br><br>
-                    <div id="designer">student @ usc iya</div>
-                    <br><br><br>
-                </div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+    
+	<body class="d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="index.html">faith!w</a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" id="about" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="work" href="work.html">work</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
 
+        <div class="description">
+            <h1>Hello! I'm Faith.</h1>
+            <br><br>
+            <p>I'm a creator exploring the intersections of design and tech.</p>
+            <p>Currently - learning and building at the USC Iovine & Young Academy.</p>
         </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
 
+        <hr id="main">
+
+        <div class="recent" style="margin-bottom:0">
+            <h1>Recent</h1>
+            <br><br>
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col" id="nooz">
+                    <a href="noozn.html"><img src="nooz/noozov.jpg"></a>
+                    <h2>Nooz</h2>
+                    <p>Reinventing news.</p>
+                  </div>
+                  <div class="col" id="dfa">
+                    <a href="dfa.html"><img src="dfa.png"></a>
+                    <h2>DFA Financing Futures</h2>
+                    <p>Project with Discover for the Design For America national project.</p>
+                  </div>
+            </div>
+        </div>
+        <br>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="main.js">
+            var ready = (callback) => {
+            if (document.readyState != "loading") callback();
+            else document.addEventListener("DOMContentLoaded", callback);
+            }
+            ready(() => {
+                document.querySelector(".header").style.height = window.innerHeight + "px";
+            })
+        </script>
+
+	</body>
+    
+    <footer class="footer d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="foot mb-3 mb-md-0 text-muted">site built with &lt;3 by faith wang</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="mailto: faithw@usc.edu">email</a></li>
+          <li class="ms-3"><a class="text-muted" href="https://linkedin.com/in/faithwang003/">linkedin</a></li>
+          <li class="ms-3"><a class="text-muted" href="faithwangresume.pdf">resume</a></li>
+        </ul>
+      </footer>
+	
 </html>
