@@ -48,7 +48,7 @@
     text-decoration-color: #81ff42;
     text-decoration-thickness: 2px;
 }
-
+ 
 .navbar-brand {
     color:black;
     font-size:25px;
@@ -76,7 +76,7 @@
 
 .description p {
 	color:black;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 #main {
@@ -119,9 +119,9 @@
     border: 1px black solid;
 }
 
-.col img:hover {
+/* .col img:hover {
     border:2px #00bdfd solid;
-}
+} */
 
 .row {
     display:flex;
@@ -143,6 +143,10 @@
 
 #dfa img:hover {
     border: 2px solid #00bdfd;
+}
+
+ol {
+    font-size: 18px;
 }
 
 .recent h2 {
@@ -203,7 +207,7 @@ a:hover {
 
 #bio {
     margin-left:25%;
-    margin-top:-11%;
+    margin-top:-14%;
     width:40%;
     font-size: 20px;
 }
@@ -239,7 +243,7 @@ a:hover {
 
 #research {
     font-size:18px;
-    border:2px #ffe800 solid;
+    border:1px black solid;
     width:76%;
     padding:2%;
     margin-left:1%;
@@ -256,7 +260,7 @@ a:hover {
     display: flex;
     flex:15;
     margin-right:3%;
-    border:1px solid #81ff42; 
+    border:1px solid black; 
     padding:2%
 }
 
@@ -285,17 +289,17 @@ a:hover {
 .carousel-control-next {
     left:350px;
 }
-
+/* 
 a {
     color:#00bdfd;
-}
+} */
 
 footer .ms-3 {
     margin-right:2%;
 }
 
 footer ul {
-    margin-right:15%;
+    margin-right:15vw;
 }
 
 #research li {
@@ -303,14 +307,20 @@ footer ul {
 }
 
 footer .foot {
-    margin-left:30%;
+    margin-left:14vw;
 }
 
-footer {
-    font-size:18px;
+.footer {
+    font-size:16px;
     float:left;
 }
 
 .workfooter {
     width:100%
+}
+
+.logo:hover {
+    text-decoration:underline;
+    text-decoration-color: #ff8455;
+    color:black;
 }

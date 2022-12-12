@@ -30,3 +30,7 @@ body {
 #story {
     width:40%;
 }
+
+a:hover {
+    color:black;
+}
