@@ -55,6 +55,10 @@
     font-weight:100;
 }
 
+.navbar-brand:hover {
+    text-decoration:#00bdfd;
+}
+
 .description {
     /* display:inline-block; */
 	margin-left:11%;
